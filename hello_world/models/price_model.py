@@ -20,7 +20,7 @@ def run_price_model(json):
     y = df['Price']
 
     # load model
-    clf = load(r'decision_system\price_model\models\PriceModel.joblib') 
+    clf = load(r'hello_world\models\PriceModel.joblib') 
 
     # Make predictions
     y_pred = clf.predict(x)
