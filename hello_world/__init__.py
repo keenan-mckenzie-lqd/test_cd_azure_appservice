@@ -8,7 +8,7 @@ from hello_world.blueprint_1.routes import mod
 
 @app.route("/")
 def hello():
-    return "Hello World!"
+    return "Hello Lester!"
 
 @app.route('/price', methods=['POST'])
 def price_model():
