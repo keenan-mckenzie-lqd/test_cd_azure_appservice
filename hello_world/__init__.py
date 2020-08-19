@@ -18,4 +18,6 @@ def price_model():
 def classification_model():
     json_body = request.get_json(force=True)
     result = df_run_CashInflow(json_body) 
-    return {'model': 'price_model', 'prediction': result}
+    result = result.replace("\n", "").replace(" ' ' ", "','").replace("[' ", "['").replace(" ']", "']")
+    result = result
+    return result
